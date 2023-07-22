@@ -6,7 +6,7 @@ import { PRODUCTS } from '../products'
 
 export const ShopContext = createContext(null)
 
-// init an empty cat array
+// init an empty cart array
 const getDefaultCart = () => {
     let cart = {}
     for (let i = 1; i < PRODUCTS.length + 1; i++) {
