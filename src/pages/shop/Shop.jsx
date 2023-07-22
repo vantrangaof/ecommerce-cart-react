@@ -1,6 +1,6 @@
 import React from 'react';
 import { PRODUCTS } from "../../products";
-import Product from './Product';
+import Product from './Product'; // import the Product component
 import './shop.css'
 
 const Shop = () => {
@@ -10,7 +10,7 @@ const Shop = () => {
             <h1>XiaoMi Shop</h1>
         </div>
         <div className="products">
-            {PRODUCTS.map((product) =>
+            {PRODUCTS.map((product) => // The data is inclusive of id, productName, price, productImage which we declared in the Product Component
             <Product data={product}/>)}
         </div>
     </div>
